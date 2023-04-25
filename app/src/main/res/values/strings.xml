@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">VAG</string>
+    <string name="user">Introduce un username</string>
+    <string name="boton">Aceptar</string>
 </resources>

@@ -1,8 +1,10 @@
-package com.vag;
+package com.vag.vista;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.vag.R;
 
 public class MainActivity extends AppCompatActivity {
 
