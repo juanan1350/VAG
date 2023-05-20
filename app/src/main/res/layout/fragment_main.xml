@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_host_fragment_activity_main"
     android:layout_width="match_parent"
@@ -10,7 +11,8 @@
         android:id="@+id/iv19"
         android:layout_width="63dp"
         android:layout_height="105dp"
-        tools:layout_editor_absoluteX="88dp"
+        android:layout_marginStart="65dp"
+        app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="16dp"
         tools:src="@tools:sample/avatars" />
 
@@ -18,7 +20,7 @@
         android:id="@+id/iv18"
         android:layout_width="63dp"
         android:layout_height="105dp"
-        tools:layout_editor_absoluteX="277dp"
+        app:layout_constraintStart_toEndOf="@+id/iv17"
         tools:layout_editor_absoluteY="16dp"
         tools:src="@tools:sample/avatars" />
 
@@ -26,7 +28,7 @@
         android:id="@+id/iv17"
         android:layout_width="63dp"
         android:layout_height="105dp"
-        tools:layout_editor_absoluteX="214dp"
+        app:layout_constraintStart_toEndOf="@+id/iv16"
         tools:layout_editor_absoluteY="16dp"
         tools:src="@tools:sample/avatars" />
 
@@ -34,40 +36,40 @@
         android:id="@+id/iv16"
         android:layout_width="63dp"
         android:layout_height="105dp"
-        tools:layout_editor_absoluteX="151dp"
+        app:layout_constraintStart_toEndOf="@+id/iv19"
         tools:layout_editor_absoluteY="16dp"
-        tools:src="@tools:sample/avatars" />
-
-    <ImageView
-        android:id="@+id/iv15"
-        android:layout_width="110dp"
-        android:layout_height="60dp"
-        tools:layout_editor_absoluteX="267dp"
-        tools:layout_editor_absoluteY="321dp"
         tools:src="@tools:sample/avatars" />
 
     <ImageView
         android:id="@+id/iv14"
         android:layout_width="110dp"
         android:layout_height="60dp"
-        tools:layout_editor_absoluteX="267dp"
-        tools:layout_editor_absoluteY="261dp"
+        app:layout_constraintTop_toBottomOf="@+id/iv13"
+        tools:layout_editor_absoluteX="236dp"
+        tools:src="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/iv15"
+        android:layout_width="110dp"
+        android:layout_height="60dp"
+        app:layout_constraintTop_toBottomOf="@+id/iv14"
+        tools:layout_editor_absoluteX="236dp"
         tools:src="@tools:sample/avatars" />
 
     <ImageView
         android:id="@+id/iv13"
         android:layout_width="110dp"
         android:layout_height="60dp"
-        tools:layout_editor_absoluteX="267dp"
-        tools:layout_editor_absoluteY="201dp"
+        app:layout_constraintTop_toBottomOf="@+id/iv12"
+        tools:layout_editor_absoluteX="236dp"
         tools:src="@tools:sample/avatars" />
 
     <ImageView
         android:id="@+id/iv12"
-        app:layout_constraintEnd_toEndOf="parent"
         android:layout_width="110dp"
         android:layout_height="60dp"
-        tools:layout_editor_absoluteX="267dp"
+        android:layout_marginEnd="65dp"
+        app:layout_constraintEnd_toEndOf="parent"
         tools:layout_editor_absoluteY="141dp"
         tools:src="@tools:sample/avatars" />
 
@@ -75,31 +77,32 @@
         android:id="@+id/iv11"
         android:layout_width="110dp"
         android:layout_height="60dp"
+        app:layout_constraintTop_toBottomOf="@+id/iv10"
         tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="321dp"
         tools:src="@tools:sample/avatars" />
 
     <ImageView
         android:id="@+id/iv10"
         android:layout_width="110dp"
         android:layout_height="60dp"
+        app:layout_constraintTop_toBottomOf="@+id/iv09"
         tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="261dp"
         tools:src="@tools:sample/avatars" />
 
     <ImageView
         android:id="@+id/iv09"
         android:layout_width="110dp"
         android:layout_height="60dp"
+        app:layout_constraintTop_toBottomOf="@+id/iv08"
         tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="201dp"
         tools:src="@tools:sample/avatars" />
 
     <ImageView
         android:id="@+id/iv08"
         android:layout_width="110dp"
         android:layout_height="60dp"
-        tools:layout_editor_absoluteX="41dp"
+        android:layout_marginStart="41dp"
+        app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="141dp"
         tools:src="@tools:sample/avatars" />
 
@@ -107,7 +110,7 @@
         android:id="@+id/iv07"
         android:layout_width="63dp"
         android:layout_height="105dp"
-        tools:layout_editor_absoluteX="265dp"
+        app:layout_constraintStart_toEndOf="@+id/iv06"
         tools:layout_editor_absoluteY="468dp"
         tools:src="@tools:sample/avatars" />
 
@@ -115,7 +118,7 @@
         android:id="@+id/iv06"
         android:layout_width="63dp"
         android:layout_height="105dp"
-        tools:layout_editor_absoluteX="202dp"
+        app:layout_constraintStart_toEndOf="@+id/iv05"
         tools:layout_editor_absoluteY="468dp"
         tools:src="@tools:sample/avatars" />
 
@@ -123,7 +126,7 @@
         android:id="@+id/iv05"
         android:layout_width="63dp"
         android:layout_height="105dp"
-        tools:layout_editor_absoluteX="139dp"
+        app:layout_constraintStart_toEndOf="@+id/iv04"
         tools:layout_editor_absoluteY="468dp"
         tools:src="@tools:sample/avatars" />
 
@@ -131,7 +134,8 @@
         android:id="@+id/iv04"
         android:layout_width="63dp"
         android:layout_height="105dp"
-        tools:layout_editor_absoluteX="76dp"
+        android:layout_marginStart="65dp"
+        app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="468dp"
         tools:src="@tools:sample/avatars" />
 
@@ -139,7 +143,8 @@
         android:id="@+id/iv03"
         android:layout_width="63dp"
         android:layout_height="105dp"
-        tools:layout_editor_absoluteX="123dp"
+        android:layout_marginStart="90dp"
+        app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="586dp"
         tools:src="@tools:sample/avatars" />
 
@@ -147,7 +152,7 @@
         android:id="@+id/iv02"
         android:layout_width="63dp"
         android:layout_height="105dp"
-        tools:layout_editor_absoluteX="186dp"
+        app:layout_constraintStart_toEndOf="@+id/iv03"
         tools:layout_editor_absoluteY="586dp"
         tools:src="@tools:sample/avatars" />
 
@@ -155,7 +160,7 @@
         android:id="@+id/iv01"
         android:layout_width="63dp"
         android:layout_height="105dp"
-        tools:layout_editor_absoluteX="249dp"
+        app:layout_constraintStart_toEndOf="@+id/iv02"
         tools:layout_editor_absoluteY="586dp"
         tools:src="@tools:sample/avatars" />
 
